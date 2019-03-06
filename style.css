@@ -2,6 +2,11 @@ p, h3 {
     margin: 0px;
 }
 
+input.fieldInput {
+    width: 15%;
+    padding: 10px;
+}
+
 h1.mainHeading {
   text-align: center;  
 }
@@ -13,8 +18,35 @@ div h3.formHeader {
 div.form {
     display: block;
     text-align: center;
-    border: 2px grey solid;
     border-radius: 50px;
-    margin: 5% 15%;
-    padding: 5%;
+    margin: 5% 30%;
+    padding: 2%;
+    background-color: #e5e5e5;
+    box-shadow: 1px 1px 15px 1px rgba(179,179,179,0.92);
+}
+
+div form span {
+    font-size: 140%;
+}
+input.fieldInput {
+    font-size: 110%;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+input[type=submit] {
+    font-size: 110%;
+    padding: 10px;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #4CAF50;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
 }
