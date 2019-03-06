@@ -28,7 +28,7 @@ const calc6NumField2 = document.getElementById('calc6NumField2');
 
 // We also need to grab and store the result that will be displayed on the screen, otherwise the user wont know what the percentage is!
 // FORM 1 RESULT FIELD
-const calc1ResultField = document.getElementById('calc1ResultField');
+let calc1ResultField = document.getElementById('calc1ResultField')
 
 // FORM 2 RESULT FIELD
 const calc2ResultField = document.getElementById('calc2ResultField');
@@ -80,7 +80,7 @@ form1.addEventListener('submit', (event) => {
         const num2 = parseFloat(calc1NumField2.value);
         const result = (num1 / num2) * 100;
         
-        calc1ResultField.innerText = `Result: ${result}%`;
+        calc1ResultField.value = result;
         event.preventDefault();
     }
     
