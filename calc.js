@@ -99,3 +99,17 @@ form2.addEventListener('submit', (event) => {
         event.preventDefault();
     }
 });
+
+/* Calculate X is Y% of What? */
+form3.addEventListener('submit', (event) => {
+    if(!calc3NumField1.value || !calc3NumField2.value) {
+        alert(`Please enter values in all the fields!`);
+    } else {
+        const num1 = parseInt(calc3NumField1.value);
+        const num2 = parseInt(calc3NumField2.value);
+        const result = num1 / (num2 / 100);
+
+        calc3ResultField.innerText = `Result: ${result}`;
+        event.preventDefault();
+    }
+});
