@@ -113,3 +113,45 @@ form3.addEventListener('submit', (event) => {
         event.preventDefault();
     }
 });
+
+/* Calculate What percent of X is Y? */
+form4.addEventListener('submit', (event) => {
+    if(!calc4NumField1.value || !calc4NumField2.value) {
+        alert(`Please enter values in all the fields!`);
+    } else {
+        const num1 = parseFloat(calc4NumField1.value);
+        const num2 = parseFloat(calc4NumField2.value);
+        const result = (num2 / num1) * 100;
+
+        calc4ResultField.innerText = `Result: ${result}%`;
+        event.preventDefault();
+    }
+});
+
+/* Calculate X percent of what is Y? */
+form5.addEventListener('submit', (event) => {
+    if(!calc5NumField1.value || !calc5NumField2.value) {
+        alert(`Please enter values in all the fields!`);
+    } else {
+        const num1 = parseFloat(calc5NumField1.value);
+        const num2 = parseFloat(calc5NumField2.value);
+        const result = num2 / (num1 / 100);
+
+        calc5ResultField.innerText = `Result: ${result}`;
+        event.preventDefault();
+    }
+});
+
+/* Calculate Y percent of X is what? */
+form6.addEventListener('submit', (event) => {
+    if(!calc6NumField1.value || !calc6NumField2.value) {
+        alert(`Please enter values in all the fields!`);      
+    } else {
+        const num1 = parseFloat(calc6NumField1.value);
+        const num2 = parseFloat(calc6NumField2.value);
+        const result = (num1 / 100) * num2;
+
+        calc6ResultField.innerText = `Result: ${result}`;
+        event.preventDefault();
+    }
+});
