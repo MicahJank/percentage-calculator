@@ -7,15 +7,32 @@ input.fieldInput {
     padding: 10px;
 }
 
-h1.mainHeading {
-  text-align: center;  
+div.intro {
+    display: inline-block;
+    width: 100%;
 }
+div.intro p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+
+}
+
+h1.mainHeading {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;  
+}
+
+
 
 div h3.formHeader {
     padding-bottom: 5%;
 }
 
 div.form {
+    font-family: 'Roboto', sans-serif;
     display: block;
     text-align: center;
     border-radius: 50px;
@@ -36,7 +53,7 @@ input.fieldInput {
     border-radius: 5px;
 }
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=submit]:focus {
     outline: none;
 }
 

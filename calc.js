@@ -28,7 +28,7 @@ const calc6NumField2 = document.getElementById('calc6NumField2');
 
 // We also need to grab and store the result that will be displayed on the screen, otherwise the user wont know what the percentage is!
 // FORM 1 RESULT FIELD
-let calc1ResultField = document.getElementById('calc1ResultField')
+const calc1ResultField = document.getElementById('calc1ResultField')
 
 // FORM 2 RESULT FIELD
 const calc2ResultField = document.getElementById('calc2ResultField');
@@ -95,7 +95,7 @@ form2.addEventListener('submit', (event) => {
         const num2 = parseFloat(calc2NumField2.value);
         const result = (num1 / 100) * num2;
 
-        calc2ResultField.innerText = `Result: ${result}`;
+        calc2ResultField.value = result;
         event.preventDefault();
     }
 });
@@ -109,7 +109,7 @@ form3.addEventListener('submit', (event) => {
         const num2 = parseInt(calc3NumField2.value);
         const result = num1 / (num2 / 100);
 
-        calc3ResultField.innerText = `Result: ${result}`;
+        calc3ResultField.value = result;
         event.preventDefault();
     }
 });
@@ -123,7 +123,7 @@ form4.addEventListener('submit', (event) => {
         const num2 = parseFloat(calc4NumField2.value);
         const result = (num2 / num1) * 100;
 
-        calc4ResultField.innerText = `Result: ${result}%`;
+        calc4ResultField.value = result;
         event.preventDefault();
     }
 });
@@ -137,7 +137,7 @@ form5.addEventListener('submit', (event) => {
         const num2 = parseFloat(calc5NumField2.value);
         const result = num2 / (num1 / 100);
 
-        calc5ResultField.innerText = `Result: ${result}`;
+        calc5ResultField.value = result;
         event.preventDefault();
     }
 });
@@ -151,7 +151,7 @@ form6.addEventListener('submit', (event) => {
         const num2 = parseFloat(calc6NumField2.value);
         const result = (num1 / 100) * num2;
 
-        calc6ResultField.innerText = `Result: ${result}`;
+        calc6ResultField.value = result;
         event.preventDefault();
     }
 });

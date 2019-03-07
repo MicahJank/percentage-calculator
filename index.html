@@ -5,16 +5,20 @@
         <meta charset="UTF-8">
         <title>Percentage Calculator</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     </head>
 
     <body>
-        <h1 class="mainHeading">Percentage Calculators</h1>
+        <div class="intro"> 
+            <h1 class="mainHeading">Percentage Calculators</h1>
+            <p>These percent calculators are free to use, I made them
+                using Javascript to help myself get better at coding.
+                Hope you find them useful!
+            </p>
+        </div>
 
         <!--               FORM 1                  -->
         <div class="form">
-            <div>
-                <!-- <h3 class="formHeader">X is what % of Y?</h3> -->
-            </div>
             <form id="xIsWhatPercentOfY">
                 <input class="fieldInput" type="text" id="calc1NumField1" autocomplete="off">
                 <span>is what percent of</span>
@@ -29,69 +33,70 @@
 
          <!--               FORM 2                  -->
          <div class="form">
-            <p>What is Y% of X?</p>
             <form id="whatIsY%OfX">
                 <span>What is</span>
-                <input type="text" id="calc2NumField1" autocomplete="off"> percent of
-                <input type="text" id="calc2NumField2" autocomplete="off"> 
+                <input class="fieldInput" type="text" id="calc2NumField1" autocomplete="off"> 
+                <span>percent of</span>
+                <input class="fieldInput" type="text" id="calc2NumField2" autocomplete="off"> 
                 <span>?</span>
                 <br><br>
                 <input type="submit" value="CALCULATE">
+                <input class="fieldInput" type="text" id="calc2ResultField" value="" readonly>
             </form>
-            <h3 id="calc2ResultField">Result:</h3>
         </div>
 
          <!--               FORM 3                  -->
          <div class="form">
-            <p>X is Y% of what?</p>
             <form id="xIsY%OfWhat">
-                <input type="text" id="calc3NumField1" autocomplete="off"> is
-                <input type="text" id="calc3NumField2" autocomplete="off">
+                <input class="fieldInput" type="text" id="calc3NumField1" autocomplete="off">
+                <span>is</span>
+                <input class="fieldInput" type="text" id="calc3NumField2" autocomplete="off">
                 <span>percent of what?</span>
                 <br><br>
                 <input type="submit" value="CALCULATE">
+                <input class="fieldInput" type="text" id="calc3ResultField" value="" readonly>
             </form>
-            <h3 id="calc3ResultField">Result:</h3>
         </div>
         
         <!--               FORM 4                  -->
         <div class="form">
-            <p>What % of X is Y?</p>
             <form id="what%OfXIsY">
                 <span>What percent of</span>
-                <input type="text" id="calc4NumField1" autocomplete="off"> is
-                <input type="text" id="calc4NumField2" autocomplete="off"> 
+                <input class="fieldInput" type="text" id="calc4NumField1" autocomplete="off"> 
+                <span>is</span>
+                <input class="fieldInput" type="text" id="calc4NumField2" autocomplete="off"> 
                 <span>?</span>
                 <br><br>
                 <input type="submit" value="CALCULATE">
+                <input class="fieldInput" type="text" id="calc4ResultField" value="" readonly>
+                <span>%</span>
             </form>
-            <h3 id="calc4ResultField">Result:</h3>
         </div>
        
         <!--               FORM 5                  -->
         <div class="form">
-            <p>X% of what is Y?</p>
             <form id="x%OfWhatIsY">
-                <input type="text" id="calc5NumField1" autocomplete="off"> percent of what is
-                <input type="text" id="calc5NumField2" autocomplete="off"> 
+                <input class="fieldInput" type="text" id="calc5NumField1" autocomplete="off"> 
+                <span>percent of what is</span>
+                <input class="fieldInput" type="text" id="calc5NumField2" autocomplete="off"> 
                 <span>?</span>
                 <br><br>
                 <input type="submit" value="CALCULATE">
+                <input class="fieldInput" type="text" id="calc5ResultField" value="" readonly>
             </form>
-            <h3 id="calc5ResultField">Result:</h3>
         </div>
 
         <!--               FORM 6                  -->
         <div class="form">
-            <p>Y% of X is what?</p>
             <form id="y%OfXIsWhat">
-                <input type="text" id="calc6NumField1" autocomplete="off"> percent of
-                <input type="text" id="calc6NumField2" autocomplete="off"> 
+                <input class="fieldInput" type="text" id="calc6NumField1" autocomplete="off"> 
+                <span>percent of</span>
+                <input class="fieldInput" type="text" id="calc6NumField2" autocomplete="off"> 
                 <span>is what?</span>
                 <br><br>
                 <input type="submit" value="CALCULATE">
+                <input class="fieldInput" type="text" id="calc6ResultField" value="" readonly>
             </form>
-            <h3 id="calc6ResultField">Result:</h3>
         </div>
        
         <script type="text/javascript" src="calc.js"></script>
