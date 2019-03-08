@@ -15,7 +15,7 @@ div.intro p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     text-align: center;
-    width: 30%;
+    width: 100%;
     margin: auto;
 
 }
@@ -48,9 +48,8 @@ div form span {
 input.fieldInput {
     font-size: 110%;
     border: none;
-    margin-left: 10px;
-    margin-right: 10px;
     border-radius: 5px;
+    margin: 10px;
 }
 
 input[type=text]:focus, input[type=submit]:focus {
@@ -66,4 +65,28 @@ input[type=submit] {
     text-decoration: none;
     border: none;
     border-radius: 5px;
+}
+
+/*                        FOR MOBILE                                      */
+
+@media screen and (max-width: 1100px) {
+
+    div.intro p {
+        font-size: 1.5rem;
+        display: block;
+        width: 90%;
+    }
+
+    div.form {
+        margin: 40px 10px;
+    }
+
+    div form span {
+        font-size: 90%;
+    }
+
+
+
+
+
 }
